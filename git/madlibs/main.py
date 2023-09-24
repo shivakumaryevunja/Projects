@@ -36,18 +36,3 @@ def computer_guess(x):
 
 
 computer_guess(10)
-
-
-
-'''def guess(x):
-    random_num = random.randint(1, x)
-    guess = 0
-
-    while random_num != guess:
-        guess = int(input(f"guess a number btw 1 and {x}: "))
-        if guess > random_num:
-            print(f"the guess is not close {x}")
-        elif guess < random_num:
-            print(f"the guess is close {x}")
-
-    print(f"the guess is correct {random_num}")'''
