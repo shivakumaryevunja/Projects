@@ -4,14 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Details</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: aliceblue;
+            padding: 20px 30px;
+            border-radius: 25px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-radius: 20px;
+            border-color: black;
+            border: 10px;
+            
+        }
+        ul{
+            margin: 0;
+        }
+        label{
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+        input{
+            width: 300px;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 300px;
+        }
+        textarea{
+            width: 300px;
+            height: 100px;
+        }
+        button{
+            margin-top: 15px;
+            padding: 5px;
+            color: aliceblue;
+            background-color: rgb(250, 174, 43);
+            border-color: white;
+            
+        }
+        body{
+            background-color: rgb(250, 174, 43);
+        }
+      #contact{
+        border-radius: 24px;
+        padding: 20px 30px;
+        background-color: aliceblue;
+      
+      }
+    </style>
 </head>
 <body>
-    <h1>Contact Details</h1>
-    <ul>
+    <div class="container">
+        
+        <form action="#" method="POST">
+            <h1 id="newForm" style="text-align: center; margin-bottom: 30px;">Message me:</h1>
+            <label>Name</label>
+            <input type="text" id="name" value="">
+            <label >Email</label>
+            <input type="email" id="email" value="">
+            <label>Message</label>
+            <textarea id="message" value=""></textarea>
+            <button id="submit" type="submit" onclick="submitbtn()">Send</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div id="contact" class="container">
+    
+    <ul  >
+        <h2 style="text-align: center;">Contact Details</h2>
         <li>+91 8547381603</li><br>
         <li><b>Mail id:</b> shivakumar.yevunja@gmail.com</li>
         <br>
         <li><b>Address: </b>Whitefield Bangalore 560066</li>
     </ul>
+</div>
+</div>
+<script src="./code.js"></script>
 </body>
 </html>
